@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <ImageView
+        android:id="@+id/bgSummary"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:src="@drawable/bg_pause_dialog"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎖️ สรุปคะแนนรอบนี้! 🏆"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/bgSummary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tvTotalGrilled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ปิ้งไปทั้งหมด 0 ชิ้น"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvFinalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คะแนน: 0"
+            android:textColor="#FFEB3B"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvHighScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="คะแนนสูงสุด: 0"
+            android:textColor="#FFD700"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvHappiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ความสุข: 100"
+            android:textColor="#00FF00"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvBurntCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ไหม้ไปแล้ว: 0 ชิ้น"
+            android:textColor="#FF5722"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnFinalExit"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:src="@drawable/btn_exit_green"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@id/bgSummary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

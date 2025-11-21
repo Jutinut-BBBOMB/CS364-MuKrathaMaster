@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bgSplitGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <ImageView
+        android:id="@+id/bgMainTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_wood_top"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bgSplitGuideline" />
+
+    <ImageView
+        android:id="@+id/bgMainBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_table"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/bgSplitGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score : 0"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time : 60"
+        android:textColor="#FFEB3B"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="3"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:id="@+id/btnPause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/btn_pause_icon"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgStove"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:src="@drawable/stove"
+        app:layout_constraintBottom_toTopOf="@+id/panelBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvScore"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <ImageView
+        android:id="@+id/slot0"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/pork_raw"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@id/imgStove"
+        app:layout_constraintTop_toTopOf="@id/imgStove" />
+
+    <ImageView
+        android:id="@+id/slot1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="176dp"
+        android:src="@drawable/pork_raw"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/imgStove"
+        app:layout_constraintTop_toTopOf="@id/imgStove" />
+
+    <ImageView
+        android:id="@+id/slot2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginBottom="228dp"
+        android:src="@drawable/pork_raw"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/imgStove"
+        app:layout_constraintStart_toStartOf="@id/imgStove" />
+
+    <ImageView
+        android:id="@+id/slot3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="196dp"
+        android:src="@drawable/pork_raw"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/imgStove"
+        app:layout_constraintEnd_toEndOf="@id/imgStove" />
+
+    <View
+        android:id="@+id/panelBackground"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:background="@drawable/bg_control_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เลือกวัตถุดิบที่คุณจะย่าง"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        app:layout_constraintTop_toTopOf="@id/panelBackground"
+        app:layout_constraintStart_toStartOf="@id/panelBackground"
+        app:layout_constraintEnd_toEndOf="@id/panelBackground"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/btnChicken"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:src="@drawable/chicken_raw"
+        app:layout_constraintTop_toBottomOf="@id/tvInstruction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ไก่"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnChicken"
+        app:layout_constraintStart_toStartOf="@id/btnChicken"
+        app:layout_constraintEnd_toEndOf="@id/btnChicken"/>
+
+    <ImageView
+        android:id="@+id/btnPork"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:src="@drawable/pork_raw"
+        app:layout_constraintTop_toTopOf="@id/btnChicken"
+        app:layout_constraintEnd_toStartOf="@id/btnChicken"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="หมู"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnPork"
+        app:layout_constraintStart_toStartOf="@id/btnPork"
+        app:layout_constraintEnd_toEndOf="@id/btnPork"/>
+
+    <ImageView
+        android:id="@+id/btnBeef"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:src="@drawable/beef_rare"
+        app:layout_constraintTop_toTopOf="@id/btnChicken"
+        app:layout_constraintStart_toEndOf="@id/btnChicken"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เนื้อ"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnBeef"
+        app:layout_constraintStart_toStartOf="@id/btnBeef"
+        app:layout_constraintEnd_toEndOf="@id/btnBeef"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
