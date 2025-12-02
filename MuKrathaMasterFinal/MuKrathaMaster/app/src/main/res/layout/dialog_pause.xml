@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <ImageView
+        android:id="@+id/bgDialog"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:src="@drawable/bg_pause_dialog"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="พักเกมหมูกระทะ\nคุณอยากจะทำอะไรต่อ?"
+        android:textColor="#FFD700"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/bgDialog"
+        app:layout_constraintStart_toStartOf="@id/bgDialog"
+        app:layout_constraintEnd_toEndOf="@id/bgDialog"
+        android:layout_marginTop="50dp"/>
+
+    <ImageButton
+        android:id="@+id/btnResume"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:src="@drawable/btn_continue_game"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <ImageButton
+        android:id="@+id/btnRestart"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:src="@drawable/btn_restart"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/btnResume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btnExit"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:src="@drawable/btn_exit"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/btnRestart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MukrathaMaster</string>
+    <string name="score_label">Score: </string>
+    <string name="time_label">Time: </string>
+
+    <string name="history_last_stats">คะแนนล่าสุด: %1$d\nปิ้งไปทั้งหมด: %2$d ชิ้น</string>
+    <string name="history_no_save">ไม่พบประวัติการเล่น</string>
+    <string name="high_score_label">คะแนนสูงสุด: </string>
+
+    <string name="summary_total_grilled">ปิ้งไปทั้งหมด %1$d ชิ้น</string>
+    <string name="summary_final_score">คะแนน: %1$d</string>
+    <string name="summary_happiness">ความสุข: %1$d</string>
+    <string name="summary_burnt_count">ไหม้ไปแล้ว: %1$d ชิ้น</string>
+</resources>

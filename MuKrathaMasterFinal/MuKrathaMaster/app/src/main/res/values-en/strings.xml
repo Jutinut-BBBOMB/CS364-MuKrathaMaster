@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MukrathaMaster</string>
+    <string name="score_label">Score: </string>
+    <string name="time_label">Time: </string>
+
+    <string name="history_last_stats">Last Score: %1$d\nTotal Grilled: %2$d pieces</string>
+    <string name="history_no_save">No saved game found</string>
+    <string name="high_score_label">High Score: </string>
+
+    <string name="summary_total_grilled">Total Grilled %1$d pieces</string>
+    <string name="summary_final_score">Score: %1$d</string>
+    <string name="summary_happiness">Happiness: %1$d</string>
+    <string name="summary_burnt_count">Burnt: %1$d pieces</string>
+</resources>
