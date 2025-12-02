@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MukrathaMaster</string>
+    <string name="score_label">Score: </string>
+    <string name="time_label">Time: </string>
+
+    <string name="history_last_stats">Last Score: %1$d\nTotal Grilled: %2$d pieces</string>
+    <string name="history_no_save">No saved game found</string>
+    <string name="high_score_label">High Score: </string>
+
+    <string name="summary_total_grilled">Total Grilled %1$d pieces</string>
+    <string name="summary_final_score">Score: %1$d</string>
+    <string name="summary_happiness">Happiness: %1$d</string>
+    <string name="summary_burnt_count">Burnt: %1$d pieces</string>
+
+
+    //dialog_summary.xml
+    <string name="summary_title">🎖️ Round Summary! 🏆</string>
+
+
+    //activity_main.xml
+    <string name="instruction_text">Choose your meat</string>
+    <string name="meat_chicken">Chicken</string>
+    <string name="meat_pork">Pork</string>
+    <string name="meat_beef">Beef</string>
+
+    <string name="initial_score_text">Score : 0</string>
+    <string name="initial_time_text">Time : 60</string>
+
+    //activity_main_menu.xml
+    <string name="menu_title">MU KRATHA MASTER</string>
+
+    //dialog_history.xml
+    <string name="history_dialog_title">📜 Grill History 📜</string>
+    <string name="history_high_score_header">🏆 High Score 🏆</string>
+    <string name="history_last_stats_divider">--- Last Stats ---</string>
+    <string name="history_stats_placeholder">Score: 0 | Grilled: 0 pcs</string>
+
+
+    //dialog_pause.xml
+    <string name="pause_title">Game Paused\nWhat would you like to do?</string>
+</resources>

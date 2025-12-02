@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">MukrathaMaster</string>
+    <string name="score_label">Score: </string>
+    <string name="time_label">Time: </string>
+
+    <string name="history_last_stats">คะแนนล่าสุด: %1$d\nปิ้งไปทั้งหมด: %2$d ชิ้น</string>
+    <string name="history_no_save">ไม่พบประวัติการเล่น</string>
+    <string name="high_score_label">คะแนนสูงสุด: </string>
+
+    <string name="summary_total_grilled">ปิ้งไปทั้งหมด %1$d ชิ้น</string>
+    <string name="summary_final_score">คะแนน: %1$d</string>
+    <string name="summary_happiness">ความสุข: %1$d</string>
+    <string name="summary_burnt_count">ไหม้ไปแล้ว: %1$d ชิ้น</string>
+
+    //dialog_summary.xml
+    <string name="summary_title">🎖️ สรุปคะแนนรอบนี้! 🏆</string>
+
+
+    //activity_main.xml
+    <string name="instruction_text">เลือกวัตถุดิบที่คุณจะย่าง</string>
+    <string name="meat_chicken">ไก่</string>
+    <string name="meat_pork">หมู</string>
+    <string name="meat_beef">เนื้อ</string>
+
+    <string name="initial_score_text">คะแนน : 0</string>
+    <string name="initial_time_text">เวลา : 60</string>
+
+    //activity_main_menu.xml
+    <string name="menu_title">หมูกระทะมาสเตอร์</string>
+
+    //dialog_history.xml
+    <string name="history_dialog_title">📜 ประวัติการย่าง 📜</string>
+    <string name="history_high_score_header">🏆 คะแนนสูงสุด 🏆</string>
+    <string name="history_last_stats_divider">--- สถิติล่าสุด ---</string>
+    <string name="history_stats_placeholder">คะแนน: 0 | ปิ้งไป: 0 ชิ้น</string>
+
+    //dialog_pause.xml
+    <string name="pause_title">พักเกมหมูกระทะ\nคุณอยากจะทำอะไรต่อ?</string>
+</resources>
